@@ -12,12 +12,7 @@ const char* Orders::buy_ticket(const char *u, const char *id, Date date, int n, 
         (!connect->ctrain.bpt_station.Exist(hash_f)) ||
         (!connect->ctrain.bpt_station.Exist(hash_t))) { return "-1"; }
     if(strcmp(q,"false")&&strcmp(q,"true")){return "-1";}
-    int tmpuser_pos=connect->cuser.bpt_user.Find(hash_u);
-    User tmpuser;
-    USER.Read(tmpuser,tmpuser_pos);
-    if(tmpuser.logstate==0){return "-1";}
-
-//    cout<<"here:1"<<endl;
+    if(!connect->loguser.count(u)){return "-1";}
 
     int tmptrain_pos=connect->ctrain.bpt_train.Find(hash_ID);
     Train tmptrain;
@@ -82,7 +77,9 @@ const char* Orders::buy_ticket(const char *u, const char *id, Date date, int n, 
         if(!strcmp(q,"true"))strcpy(status,"pending");
         else return "-1";
     }
-
+    int tmpuser_pos=connect->cuser.bpt_user.Find(hash_u);
+    User tmpuser;
+    USER.Read(tmpuser,tmpuser_pos);
     tmpuser.ordernum++;
 //    cerr<<tmpuser.name<<" ordernum = "<<tmpuser.ordernum<<endl;
     USER.Write(tmpuser,tmpuser_pos);
@@ -109,10 +106,10 @@ const char* Orders::buy_ticket(const char *u, const char *id, Date date, int n, 
 
         use_order.Insert(make_pair(make_pair(hash_u,tmpuser.ordernum),order_pos));
 //        cout<<"order_pos= "<<order_pos<<endl;
-        int aaa=use_order.Find(make_pair(hash_u,tmpuser.ordernum));
+//        int aaa=use_order.Find(make_pair(hash_u,tmpuser.ordernum));
 //        cout<<"aaa= "<<aaa<<endl;
-        Order bbb;
-        USE_ORDER.Read(bbb,aaa);
+//        Order bbb;
+//        USE_ORDER.Read(bbb,aaa);
 //        cout<<"use_order_pos= "<<aaa<<endl;
 //        cout<<"order.status= "<<bbb.status<<endl;
 
@@ -127,14 +124,14 @@ const char* Orders::buy_ticket(const char *u, const char *id, Date date, int n, 
 const char* Orders::query_order(const char *u) {
     pair<int,int> hash_u=hash.hash_it(u);
     if(!(connect->cuser.bpt_user.Exist(hash_u))){return "-1";}
-    int user_pos=connect->cuser.bpt_user.Find(hash_u);
-    User tmpuser;
-    USER.Read(tmpuser,user_pos);
-    if(!tmpuser.logstate)return "-1";
+    if(!connect->loguser.count(u))return "-1";
 
     char* ans;
     char head[8200];
 //    cout<<"ordernum= "<<tmpuser.ordernum<<endl;
+    int user_pos=connect->cuser.bpt_user.Find(hash_u);
+    User tmpuser;
+    USER.Read(tmpuser,user_pos);
     snprintf(head,sizeof(head),"%d",tmpuser.ordernum);
     for(int i=tmpuser.ordernum;i>=1;i--) {
         int order_pos=use_order.Find(make_pair(hash_u, i));
@@ -160,11 +157,12 @@ const char* Orders::query_order(const char *u) {
 const char* Orders::refund_ticket(const char *u, int n) {
     pair<int,int> hash_u=hash.hash_it(u);
     if(!(connect->cuser.bpt_user.Exist(hash_u)))return "-1";
+//    printf("tmpuser : %s  is_login = %d\n", tmpuser.username, tmpuser.logstate);
+    if(!connect->loguser.count(u))return "-1";
+
     int tmpuser_pos=connect->cuser.bpt_user.Find(hash_u);
     User tmpuser;
     USER.Read(tmpuser,tmpuser_pos);
-    printf("tmpuser : %s  is_login = %d\n", tmpuser.username, tmpuser.logstate);
-    if(tmpuser.logstate==0)return "-1";
     if(tmpuser.ordernum<n)return "-1";
     int order_pos=use_order.Find(make_pair(hash_u,tmpuser.ordernum+1-n));
     Order order;
@@ -173,8 +171,6 @@ const char* Orders::refund_ticket(const char *u, int n) {
     int tmptrain_pos=connect->ctrain.bpt_train.Find(hash_id);
     Train tmptrain;
     TRAIN.Read(tmptrain,tmptrain_pos);
-
-//    cout<<"qaqqqqq"<<endl;//pass
 
     if(!strcmp(order.status,"refunded")){return "-1";}
     else if(!strcmp(order.status,"pending")){

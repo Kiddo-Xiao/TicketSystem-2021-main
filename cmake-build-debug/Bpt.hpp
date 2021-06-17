@@ -246,6 +246,11 @@ public:
     void Clean() {
         Recycle();
     }
+    bool Empty(int x = 0) {
+        Node node;
+        Read(node, x);
+        return node.size == 0;
+    }
 
     void Insert(TYPE key, int x = 0, int fa = -1, int fpos = -1) {
 //        cerr<<"------Let's see the size of x!!!------"<<endl;

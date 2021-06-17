@@ -17,13 +17,15 @@ public:
     Users cuser{this};
     Trains ctrain{this};
     Orders corder{this};
+    unordered_map<string,int> loguser;
+
 //    File<User> USER;
 
 
     Connector(){}
     void run();
     const char* clean();
-    const char* exit();
+    const char* Exit();
     int split(string str, char c, string *&ans);
 	int read_int(string str);
 	Time read_time(string str);

@@ -1,97 +1,90 @@
 ---------------No. 1----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 2----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 3----------------
-11484 Mayer
+wrong password!
 -1
 ---------------No. 4----------------
-9628 Cutter
+wrong password!
 -1
 ---------------No. 5----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 6----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 7----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 8----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 9----------------
-1276 Rangers
 0
 ---------------No. 10----------------
 Schwarz 黑黑 of.manufacture@was.taken 1
 ---------------No. 11----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 12----------------
 -1
 ---------------No. 13----------------
 -1
 ---------------No. 14----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 15----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 16----------------
-8236 BluePoison
 0
 ---------------No. 17----------------
 0
 ---------------No. 18----------------
-14152 Swire
 0
 ---------------No. 19----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 20----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 21----------------
 0
 ---------------No. 22----------------
-14268 Orchid
 0
 ---------------No. 23----------------
 Ptilopsis 白面鸮 this.distinctive@feature.it 2
 ---------------No. 24----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 25----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 26----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 27----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 28----------------
 Liskarm 雷蛇 well.as.against@its.reactionar 1
 ---------------No. 29----------------
 Bibeak 柏喙 the.bourgeoisie@possesses.howe 1
 ---------------No. 30----------------
-13108 Rope
 0
 ---------------No. 31----------------
-3828 Shining
 0
 ---------------No. 32----------------
 Shamare 巫恋 rising.Even@manufacture.no 1
 ---------------No. 33----------------
-1044 WaaiFu
 0
 ---------------No. 34----------------
 Magallan 麦哲 existing.societies@is.the 1
 ---------------No. 35----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 36----------------
 Ambriel 安比尔 millionaires@the.leaders 1
@@ -116,17 +109,16 @@ Hung 吽吽 itself.a.Power@II.It 1
 ---------------No. 46----------------
 0
 ---------------No. 47----------------
-14384 Texas
 0
 ---------------No. 48----------------
 -1
 ---------------No. 49----------------
 Saria 塞雷娅 in.the.common@ruin.of 1
 ---------------No. 50----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 51----------------
-580 Blaze
+wrong password!
 -1
 ---------------No. 52----------------
 Bison 拜松 classes.again@subordinate.grad 1
@@ -137,15 +129,14 @@ Lappland 拉普兰德 manifold.gradation@of.social 1
 ---------------No. 55----------------
 Eyjafjalla 艾雅法拉 its.place.The@guildmasters.wer 2
 ---------------No. 56----------------
-9048 Ambriel
 0
 ---------------No. 57----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 58----------------
 Leizi 惊蛰 this.spectre@Pope.and 1
 ---------------No. 59----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 60----------------
 Ptilopsis 白面鸮 this.distinctive@feature.it 2
@@ -154,43 +145,37 @@ Cutter 刻刀 antagonisms@Society.as 1
 ---------------No. 62----------------
 0
 ---------------No. 63----------------
-14500 Lava
 0
 ---------------No. 64----------------
-6496 Saria
 0
 ---------------No. 65----------------
 0
 ---------------No. 66----------------
-14616 Reed
 0
 ---------------No. 67----------------
 Vermeil 红云 production@The.place 1
 ---------------No. 68----------------
 Gravel 砾砾 that.each.time@ended.either 1
 ---------------No. 69----------------
-4408 Cliffheart
 0
 ---------------No. 70----------------
+privilege wrong
 -1
 ---------------No. 71----------------
 Steward 史都华德 society.at@large.or 1
 ---------------No. 72----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 73----------------
-8352 Indra
 0
 ---------------No. 74----------------
 0
 ---------------No. 75----------------
-14732 Istina
 0
 ---------------No. 76----------------
-10440 Gitano
 0
 ---------------No. 77----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 78----------------
 Gitano 远山 sprang.the@chartered.burghers 1
@@ -201,18 +186,15 @@ Dobermann 杜宾 in.a.word.oppressor@and.oppres 1
 ---------------No. 81----------------
 Ifrit 伊芙利特 one.another@carried.on 2
 ---------------No. 82----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 83----------------
 Purestream 清流 party.itself@To.this 1
 ---------------No. 84----------------
-1856 Manticore
 0
 ---------------No. 85----------------
-13804 May
 0
 ---------------No. 86----------------
-1624 Firewatch
 0
 ---------------No. 87----------------
 Elysium 极境 has.simplified@the.class 3
@@ -223,7 +205,6 @@ Leizi 惊蛰 this.spectre@Pope.and 1
 ---------------No. 90----------------
 Manticore 狮蝎 not.hurled@back.the 2
 ---------------No. 91----------------
-12064 Sesa
 0
 ---------------No. 92----------------
 Eyjafjalla 艾雅法拉 its.place.The@guildmasters.wer 2
@@ -232,22 +213,19 @@ Sora 空空 have.patricians@knights.plebei 1
 ---------------No. 94----------------
 0
 ---------------No. 95----------------
-14848 Breeze
 0
 ---------------No. 96----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 97----------------
 Durin 杜林 feudal.society@a.rapid 1
 ---------------No. 98----------------
-6728 Perfumer
 0
 ---------------No. 99----------------
 Hibiscus 芙蓉 Communistic@by.its 1
 ---------------No. 100----------------
 Saria 塞雷娅 in.the.common@ruin.of 1
 ---------------No. 101----------------
-11484 Mayer
 0
 ---------------No. 102----------------
 Gitano 远山 sprang.the@chartered.burghers 1
@@ -260,7 +238,6 @@ Sesa 慑砂 This.market@has.given 1
 ---------------No. 106----------------
 0
 ---------------No. 107----------------
-14964 Matterhorn
 0
 ---------------No. 108----------------
 Hung 吽吽 itself.a.Power@II.It 1
@@ -327,7 +304,7 @@ INSCRIPTIONS 黑龙江省五大连池市 06-27 19:22 -> 新疆米泉市 06-28 14
 ---------------No. 133----------------
 Purestream 清流 party.itself@To.this 1
 ---------------No. 134----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 135----------------
 Meteorite 陨星 thereby.to@the.revolutionary 3
@@ -342,13 +319,12 @@ LeavesofGrass 新疆塔城市 07-26 07:38 -> 辽宁省抚顺市 07-26 14:21 1093
 ---------------No. 139----------------
 Cliffheart 崖心 in.London.and@sketched.the 1
 ---------------No. 140----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 141----------------
-2668 Earthspirit
 0
 ---------------No. 142----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 143----------------
 4158616
@@ -380,7 +356,7 @@ Phantom 傀影 not.done.away@with.class 1
 ---------------No. 154----------------
 Silence 赫默 stood.in.constant@opposition.t 1
 ---------------No. 155----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 156----------------
 FEater 食铁兽 an.uninterrupted@now.hidden 1
@@ -393,19 +369,18 @@ IHEARDthatyouask 天津市 07-23 06:35 -> 广东省云浮市 07-23 18:52 229 911
 1
 INSCRIPTIONS 广东省惠阳市 08-03 01:41 -> 湖北省枣阳市 08-03 11:59 1099 69170
 ---------------No. 160----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 161----------------
 Croissant 可颂 French.German@Italian.Flemish 1
 ---------------No. 162----------------
 0
 ---------------No. 163----------------
-15080 Gummy
 0
 ---------------No. 164----------------
 18282155
 ---------------No. 165----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 166----------------
 1
@@ -413,7 +388,6 @@ IHEARDthatyouask 天津市 07-09 06:35 -> 广东省云浮市 07-09 18:52 229 911
 ---------------No. 167----------------
 304660
 ---------------No. 168----------------
-3944 Spot
 0
 ---------------No. 169----------------
 Nearl 临光 history.we@find.almost 1
@@ -443,11 +417,11 @@ Mayer 梅尔 colonisation@of.America 1
 ---------------No. 180----------------
 Perfumer 调香师 the.earlier@epochs.of 1
 ---------------No. 181----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 182----------------
-5104 Magallan
-0
+already exist!
+-1
 ---------------No. 183----------------
 1
 INSCRIPTIONS 江苏省扬州市 08-06 08:17 -> 新疆米泉市 08-06 14:38 650 70655
@@ -491,7 +465,6 @@ Reed 苇草 has.established@the.worldmarke 2
 1
 LeavesofGrass 陕西省安康市 07-06 17:25 -> 新疆伊宁市 07-07 08:52 2101 39713
 ---------------No. 202----------------
-580 Blaze
 0
 ---------------No. 203----------------
 1
@@ -501,7 +474,6 @@ Texas 德克萨斯 of.whole.industrial@armies.the 1
 ---------------No. 205----------------
 24148430
 ---------------No. 206----------------
-10788 Adnachiel
 0
 ---------------No. 207----------------
 1
@@ -526,12 +498,12 @@ Rangers 巡林 arrangement@of.society 3
 1
 INSCRIPTIONS 黑龙江省五大连池市 08-13 19:22 -> 云南省安宁市 08-13 20:42 156 70655
 ---------------No. 216----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 217----------------
 Cardigan 卡缇 the.markets@kept.ever 1
 ---------------No. 218----------------
-Conviction 断罪 vanished.in@the.face 2
+Conviction 断罪者 end.Communists@of.various 2
 ---------------No. 219----------------
 2185971
 ---------------No. 220----------------
@@ -551,11 +523,11 @@ Fang 芬芬 sufficed.for@the.growing 1
 1
 LeavesofGrass 浙江省杭州市 08-02 11:52 -> 新疆博乐市 08-03 06:04 2834 98306
 ---------------No. 227----------------
+privilege wrong
 -1
 ---------------No. 228----------------
 0
 ---------------No. 229----------------
-15196 NoirCorne
 0
 ---------------No. 230----------------
 12763218
@@ -581,19 +553,19 @@ LeavesofGrass 浙江省平湖市 07-22 08:59 -> 河北省河间市 07-22 18:01 1
 ---------------No. 239----------------
 Earthspirit 地灵 I.Communism@is.already 3
 ---------------No. 240----------------
-6148 Gravel
+wrong password!
 -1
 ---------------No. 241----------------
 Angelina 安洁莉娜 two.great.classes@directly.fac 1
 ---------------No. 242----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 243----------------
 4922025
 ---------------No. 244----------------
 Jessica 杰西卡 has.not.been@decried.as 2
 ---------------No. 245----------------
-2784 Ethan
+wrong password!
 -1
 ---------------No. 246----------------
 1
@@ -609,26 +581,25 @@ Midnight 月见夜 longer.sufficed@Thereupon.stea 1
 ---------------No. 250----------------
 0
 ---------------No. 251----------------
-15312 Kroos
+wrong password!
 -1
 ---------------No. 252----------------
 73485500
 ---------------No. 253----------------
 781550
 ---------------No. 254----------------
-4292 Flamebringer
 0
 ---------------No. 255----------------
-3132 Hoshiguma
 0
 ---------------No. 256----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 257----------------
 20460434
 ---------------No. 258----------------
 W 达不溜 in.each.single@workshop.Meanti 1
 ---------------No. 259----------------
+privilege wrong
 -1
 ---------------No. 260----------------
 5759861
@@ -643,7 +614,7 @@ Chen 陈陈 into.various@orders.a 2
 ---------------No. 265----------------
 Utage 宴宴 and.machinery@revolutionised.i 2
 ---------------No. 266----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 267----------------
 queue
@@ -666,6 +637,7 @@ Snowsant 雪雉 new.forms.of@struggle.in 2
 1
 IHEARDthatyouask 新疆吐鲁番市 07-28 05:55 -> 四川省彭州市 07-28 23:13 745 91153
 ---------------No. 276----------------
+privilege wrong
 -1
 ---------------No. 277----------------
 1
@@ -677,7 +649,6 @@ LeavesofGrass 湖南省衡阳市 07-18 16:20 -> 黑龙江省海林市 07-18 22:4
 1
 IHEARDthatyouask 天津市 07-13 06:35 -> 广东省云浮市 07-13 18:52 229 91153
 ---------------No. 280----------------
-8700 Meteor
 0
 ---------------No. 281----------------
 5551620
@@ -690,7 +661,7 @@ Ambriel 安比尔 millionaires@the.leaders 1
 1
 LeavesofGrass 浙江省杭州市 07-30 11:52 -> 广东省四会市 07-30 15:34 407 70028
 ---------------No. 285----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 286----------------
 1
@@ -747,7 +718,6 @@ Hoshiguma 星熊 is.high.time@that.Communists 2
 ---------------No. 308----------------
 -1
 ---------------No. 309----------------
-12876 Nian
 0
 ---------------No. 310----------------
 Skadi 斯卡蒂 slaves.in.the@Middle.Ages 2
@@ -800,7 +770,7 @@ INSCRIPTIONS 黑龙江省五大连池市 07-08 19:22 -> 云南省安宁市 07-08
 ---------------No. 330----------------
 Gummy 古米 commerce.to@navigation.to 1
 ---------------No. 331----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 332----------------
 Frostleaf 霜叶 aims.their@tendencies.and 1
@@ -811,7 +781,7 @@ INSCRIPTIONS 江苏省扬州市 07-11 08:17 -> 湖北省枣阳市 07-11 11:59 48
 1
 LeavesofGrass 浙江省平湖市 07-24 08:59 -> 浙江省慈溪市 07-25 09:48 3706 21953
 ---------------No. 335----------------
-580 Blaze
+already exist!
 -1
 ---------------No. 336----------------
 1
@@ -968,7 +938,7 @@ INSCRIPTIONS 广东省惠阳市 06-23 01:41 -> 北京市 06-23 06:40 411 70655
 1
 LeavesofGrass 浙江省杭州市 06-28 11:52 -> 新疆博乐市 06-29 06:04 2834 13411
 ---------------No. 392----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 393----------------
 Pramanix 初雪 means.of.exchange@and.in 1
@@ -978,7 +948,7 @@ LeavesofGrass 辽宁省抚顺市 07-21 14:24 -> 湖南省衡阳市 07-21 16:17 2
 ---------------No. 395----------------
 4797092
 ---------------No. 396----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 397----------------
 1
@@ -986,12 +956,10 @@ INSCRIPTIONS 贵州省清镇市 08-20 16:24 -> 黑龙江省五大连池市 08-20
 ---------------No. 398----------------
 9640008
 ---------------No. 399----------------
-11716 Glaucus
 0
 ---------------No. 400----------------
 0
 ---------------No. 401----------------
-15428 Myrtle
 0
 ---------------No. 402----------------
 1782688
@@ -1028,13 +996,13 @@ Gravel 砾砾 that.each.time@ended.either 1
 1
 IHEARDthatyouask 新疆吐鲁番市 07-14 05:55 -> 广东省云浮市 07-14 18:52 725 91153
 ---------------No. 416----------------
-4640 Skyfire
+wrong password!
 -1
 ---------------No. 417----------------
 1
 LeavesofGrass 辽宁省抚顺市 07-26 14:24 -> 新疆伊宁市 07-27 08:52 2834 27148
 ---------------No. 418----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 419----------------
 17108840
@@ -1058,7 +1026,7 @@ IHEARDthatyouask 新疆吐鲁番市 07-08 05:55 -> 四川省彭州市 07-08 23:1
 ---------------No. 427----------------
 queue
 ---------------No. 428----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 429----------------
 27910062
@@ -1082,7 +1050,6 @@ INSCRIPTIONS 黑龙江省五大连池市 07-05 19:22 -> 湖北省枣阳市 07-06
 [success] LeavesofGrass 广东省四会市 07-02 15:39 -> 浙江省慈溪市 07-03 09:48 2899 23767
 [refunded] LeavesofGrass 浙江省杭州市 07-22 11:52 -> 辽宁省抚顺市 07-22 14:21 402 9807
 ---------------No. 436----------------
-11600 Cuora
 0
 ---------------No. 437----------------
 1
@@ -1152,7 +1119,7 @@ queue
 ---------------No. 460----------------
 58648590
 ---------------No. 461----------------
-2088 Eyjafjalla
+wrong password!
 -1
 ---------------No. 462----------------
 3431874
@@ -1171,7 +1138,7 @@ INSCRIPTIONS 贵州省清镇市 07-23 16:24 -> 云南省安宁市 07-23 20:42 32
 ---------------No. 468----------------
 7513112
 ---------------No. 469----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 470----------------
 12595300
@@ -1200,7 +1167,6 @@ Saria 塞雷娅 in.the.common@ruin.of 1
 ---------------No. 481----------------
 Steward 史都华德 society.at@large.or 1
 ---------------No. 482----------------
-7656 SilverAsh
 0
 ---------------No. 483----------------
 4197570
@@ -1211,6 +1177,7 @@ IHEARDthatyouask 新疆吐鲁番市 07-22 05:55 -> 广东省云浮市 07-22 18:5
 1
 LeavesofGrass 浙江省平湖市 08-01 08:59 -> 陕西省安康市 08-01 17:15 1535 54225
 ---------------No. 486----------------
+coruser logstate=0
 -1
 ---------------No. 487----------------
 1
@@ -1220,7 +1187,6 @@ LeavesofGrass 黑龙江省海林市 06-30 22:56 -> 河南省偃师市 07-01 03:2
 ---------------No. 489----------------
 Midnight 月见夜 longer.sufficed@Thereupon.stea 1
 ---------------No. 490----------------
-4524 Bagpipe
 0
 ---------------No. 491----------------
 Durin 杜林 feudal.society@a.rapid 1
@@ -1230,7 +1196,7 @@ Durin 杜林 feudal.society@a.rapid 1
 1
 IHEARDthatyouask 新疆吐鲁番市 07-18 05:55 -> 四川省彭州市 07-18 23:13 745 82374
 ---------------No. 494----------------
-9396 Ptilopsis
+wrong password!
 -1
 ---------------No. 495----------------
 W 达不溜 in.each.single@workshop.Meanti 1
@@ -1276,7 +1242,6 @@ INSCRIPTIONS 广东省惠阳市 06-17 01:41 -> 江苏省扬州市 06-17 08:14 61
 ---------------No. 512----------------
 0
 ---------------No. 513----------------
-15544 Matoimaru
 0
 ---------------No. 514----------------
 9834661
@@ -1292,7 +1257,6 @@ Nightingale 夜莺 a.whole.is@more.and 1
 1
 LeavesofGrass 浙江省平湖市 07-19 08:59 -> 陕西省安康市 07-19 17:15 1535 83000
 ---------------No. 520----------------
-9512 Elysium
 0
 ---------------No. 521----------------
 976952
@@ -1309,7 +1273,6 @@ INSCRIPTIONS 云南省安宁市 08-01 20:50 -> 广东省高要市 08-01 21:36 13
 ---------------No. 526----------------
 1784252
 ---------------No. 527----------------
-6380 Steward
 0
 ---------------No. 528----------------
 10179078
@@ -1317,7 +1280,6 @@ INSCRIPTIONS 云南省安宁市 08-01 20:50 -> 广东省高要市 08-01 21:36 13
 1
 LeavesofGrass 福建省建阳市 06-29 21:19 -> 新疆博乐市 06-30 06:04 1053 25555
 ---------------No. 530----------------
-7192 Lappland
 0
 ---------------No. 531----------------
 1
@@ -1331,7 +1293,7 @@ IHEARDthatyouask 广东省云浮市 07-25 19:00 -> 四川省彭州市 07-25 23:1
 ---------------No. 534----------------
 10724945
 ---------------No. 535----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 536----------------
 Dobermann 杜宾 in.a.word.oppressor@and.oppres 1
@@ -1354,7 +1316,7 @@ INSCRIPTIONS 广东省惠阳市 07-29 01:41 -> 江苏省扬州市 07-29 08:14 61
 1
 INSCRIPTIONS 广东省惠阳市 07-31 01:41 -> 北京市 07-31 06:40 411 70655
 ---------------No. 544----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 545----------------
 2383281
@@ -1368,7 +1330,6 @@ INSCRIPTIONS 广东省高要市 08-12 21:40 -> 北京市 08-13 06:40 564 63023
 ---------------No. 549----------------
 Bison 拜松 classes.again@subordinate.grad 1
 ---------------No. 550----------------
-4756 Croissant
 0
 ---------------No. 551----------------
 1
@@ -1409,6 +1370,7 @@ Phantom 傀影 not.done.away@with.class 1
 ---------------No. 566----------------
 Skadi 斯卡蒂 slaves.in.the@Middle.Ages 2
 ---------------No. 567----------------
+privilege wrong
 -1
 ---------------No. 568----------------
 1
@@ -1428,10 +1390,9 @@ Pramanix 初雪 means.of.exchange@and.in 1
 ---------------No. 572----------------
 Bibeak 柏喙 into.the.background@every.clas 1
 ---------------No. 573----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 574----------------
-1508 Hibiscus
 0
 ---------------No. 575----------------
 Executor 送葬人 history.of@all.hitherto 1
@@ -1442,7 +1403,7 @@ Executor 送葬人 history.of@all.hitherto 1
 ---------------No. 578----------------
 Sora 空空 have.patricians@knights.plebei 1
 ---------------No. 579----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 580----------------
 0
@@ -1451,6 +1412,7 @@ logstate=0
 ---------------No. 582----------------
 33300004
 ---------------No. 583----------------
+privilege wrong
 -1
 ---------------No. 584----------------
 1
@@ -1458,7 +1420,6 @@ LeavesofGrass 宁夏石嘴山市 07-12 19:25 -> 新疆伊宁市 07-13 08:52 1855
 ---------------No. 585----------------
 NoirCorne 黑角 its.time.reacted@on.the 1
 ---------------No. 586----------------
-6612 Ceylon
 0
 ---------------No. 587----------------
 Yato 夜刀 meet.this.nursery@tale.of 3
@@ -1493,14 +1454,12 @@ IHEARDthatyouask 新疆吐鲁番市 07-14 05:55 -> 天津市 07-14 06:30 496 911
 1
 INSCRIPTIONS 广东省惠阳市 07-13 01:41 -> 新疆米泉市 07-13 14:38 1261 61281
 ---------------No. 599----------------
-10672 Beehunter
 0
 ---------------No. 600----------------
 0
 ---------------No. 601----------------
 Orchid 梓兰 middle.class@by.industrial 1
 ---------------No. 602----------------
-8584 Amiya
 0
 ---------------No. 603----------------
 2955276
@@ -1514,13 +1473,13 @@ Flamebringer 炎客 nationalities@have.assembled 2
 1
 LeavesofGrass 辽宁省抚顺市 08-04 14:24 -> 浙江省慈溪市 08-05 09:48 2904 75607
 ---------------No. 608----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 609----------------
 1
 IHEARDthatyouask 新疆吐鲁番市 07-29 05:55 -> 广东省云浮市 07-29 18:52 725 84364
 ---------------No. 610----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 611----------------
 1
@@ -1548,7 +1507,7 @@ Jessica 杰西卡 has.not.been@decried.as 2
 ---------------No. 621----------------
 Executor 送葬人 history.of@all.hitherto 1
 ---------------No. 622----------------
-3016 Hung
+wrong password!
 -1
 ---------------No. 623----------------
 0
@@ -1616,7 +1575,6 @@ queue
 ---------------No. 649----------------
 Courier 讯使 publish.their@views.their 1
 ---------------No. 650----------------
-232 Vanilla
 0
 ---------------No. 651----------------
 1
@@ -1651,7 +1609,7 @@ LeavesofGrass 宁夏石嘴山市 07-14 19:25 -> 河南省偃师市 07-15 03:28 1
 ---------------No. 662----------------
 Sussurro 苏苏 to.industry@an.impulse 2
 ---------------No. 663----------------
-1508 Hibiscus
+already exist!
 -1
 ---------------No. 664----------------
 0
@@ -1669,7 +1627,7 @@ queue
 ---------------No. 670----------------
 Weedy 温蒂 development@The.feudal 2
 ---------------No. 671----------------
-812 Deepcolor
+wrong password!
 -1
 ---------------No. 672----------------
 3290329
@@ -1679,7 +1637,6 @@ INSCRIPTIONS 贵州省清镇市 08-08 16:24 -> 云南省安宁市 08-08 20:42 32
 ---------------No. 674----------------
 2381020
 ---------------No. 675----------------
-348 Popukar
 0
 ---------------No. 676----------------
 3841240
@@ -1715,13 +1672,12 @@ puzzletheNewWorld O
 1
 IHEARDthatyouask 新疆吐鲁番市 07-18 05:55 -> 四川省彭州市 07-18 23:13 745 82374
 ---------------No. 688----------------
-tmpuser : Ambriel  is_login = 1
 0
 ---------------No. 689----------------
 1
 INSCRIPTIONS 云南省安宁市 07-29 20:50 -> 北京市 07-30 06:40 700 64748
 ---------------No. 690----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 691----------------
 1
@@ -1739,32 +1695,30 @@ puzzletheNewWorld 黑龙江省尚志市 07-18 20:11 -> 四川省绵竹市 07-19 
 ---------------No. 696----------------
 Cutter 刻刀 antagonisms@Society.as 1
 ---------------No. 697----------------
-11136 Savage
+wrong password!
 -1
 ---------------No. 698----------------
 Pramanix 初雪 means.of.exchange@and.in 1
 ---------------No. 699----------------
-7888 Aak
+wrong password!
 -1
 ---------------No. 700----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 701----------------
 11121536
 ---------------No. 702----------------
-11136 Savage
 0
 ---------------No. 703----------------
 4291124
 ---------------No. 704----------------
-7308 Platinum
+wrong password!
 -1
 ---------------No. 705----------------
 33153400
 ---------------No. 706----------------
 Croissant 可颂 French.German@Italian.Flemish 1
 ---------------No. 707----------------
-6960 ProjeKTRed
 0
 ---------------No. 708----------------
 Beehunter 猎蜂 these.burgesses@the.first 2
@@ -1808,7 +1762,7 @@ queue
 ---------------No. 725----------------
 Orchid 梓兰 middle.class@by.industrial 1
 ---------------No. 726----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 727----------------
 1
@@ -1854,7 +1808,7 @@ puzzletheNewWorld 北京市 07-28 02:54 -> 河南省登封市 07-28 09:52 455 47
 1
 LeavesofGrass 湖南省衡阳市 07-05 16:20 -> 福建省建阳市 07-05 21:14 1134 8492
 ---------------No. 737----------------
-13572 W
+wrong password!
 -1
 ---------------No. 738----------------
 -1
@@ -1883,7 +1837,6 @@ puzzletheNewWorld 辽宁省辽阳市 06-15 13:05 -> 北京市 06-16 02:45 964 47
 1
 puzzletheNewWorld 黑龙江省尚志市 08-13 20:11 -> 北京市 08-14 02:45 159 47885
 ---------------No. 748----------------
-7888 Aak
 0
 ---------------No. 749----------------
 Leizi 惊蛰 this.spectre@Pope.and 1
@@ -1892,18 +1845,16 @@ Platinum 白金 handed.down@from.the 2
 ---------------No. 751----------------
 Swire 诗怀 the.place.of@the.industrial 1
 ---------------No. 752----------------
-tmpuser : Fang  is_login = 1
-0
+-1
 ---------------No. 753----------------
 1
 INSCRIPTIONS 云南省安宁市 06-30 20:50 -> 湖北省枣阳市 07-01 11:59 1388 70655
 ---------------No. 754----------------
 612464
 ---------------No. 755----------------
-5336 GreyThroat
+wrong password!
 -1
 ---------------No. 756----------------
-tmpuser : Gravel  is_login = 0
 -1
 ---------------No. 757----------------
 3682448
@@ -1917,7 +1868,7 @@ queue
 ---------------No. 761----------------
 2939415
 ---------------No. 762----------------
-11948 Franka
+wrong password!
 -1
 ---------------No. 763----------------
 1893367
@@ -1993,7 +1944,7 @@ Bison 拜松 classes.again@subordinate.grad 1
 1
 IHEARDthatyouask 广东省云浮市 08-07 19:00 -> 四川省彭州市 08-07 23:13 20 91153
 ---------------No. 792----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 793----------------
 17761766
@@ -2021,7 +1972,7 @@ INSCRIPTIONS 云南省安宁市 08-17 20:50 -> 北京市 08-18 06:40 700 70655
 ---------------No. 802----------------
 Grani 格拉尼 serfs.of.the@Middle.Ages 1
 ---------------No. 803----------------
-9048 Ambriel
+already exist!
 -1
 ---------------No. 804----------------
 Phantom 傀影 not.done.away@with.class 1
@@ -2074,7 +2025,6 @@ Glaucus 格劳克斯 the.increase@in.the 2
 ---------------No. 826----------------
 816672
 ---------------No. 827----------------
-5568 Dobermann
 0
 ---------------No. 828----------------
 1
@@ -2111,9 +2061,10 @@ INSCRIPTIONS 湖北省枣阳市 07-08 12:03 -> 新疆米泉市 07-08 14:38 162 7
 ---------------No. 840----------------
 Aak 阿阿 in.almost.all@of.these 1
 ---------------No. 841----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 842----------------
+privilege wrong
 -1
 ---------------No. 843----------------
 4924920
@@ -2168,7 +2119,7 @@ LeavesofGrass 浙江省杭州市 07-03 11:52 -> 浙江省慈溪市 07-04 09:48 3
 ---------------No. 864----------------
 6175650
 ---------------No. 865----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 866----------------
 Ambriel 安比尔 millionaires@the.leaders 1
@@ -2208,9 +2159,10 @@ puzzletheNewWorld 河南省登封市 07-01 09:56 -> 四川省绵竹市 07-01 14:
 ---------------No. 879----------------
 queue
 ---------------No. 880----------------
+privilege wrong
 -1
 ---------------No. 881----------------
-12180 Durin
+wrong password!
 -1
 ---------------No. 882----------------
 1
@@ -2218,7 +2170,6 @@ LeavesofGrass 辽宁省抚顺市 07-25 14:24 -> 陕西省安康市 07-25 17:15 7
 ---------------No. 883----------------
 0
 ---------------No. 884----------------
-6148 Gravel
 0
 ---------------No. 885----------------
 0
@@ -2234,7 +2185,7 @@ Plume 翎羽 serf.guildmaster@and.journeyma 2
 ---------------No. 890----------------
 34669176
 ---------------No. 891----------------
-4640 Skyfire
+already exist!
 -1
 ---------------No. 892----------------
 1
@@ -2253,7 +2204,6 @@ INSCRIPTIONS 广东省高要市 07-04 21:40 -> 江苏省扬州市 07-05 08:14 76
 ---------------No. 898----------------
 queue
 ---------------No. 899----------------
-11020 Exusiai
 0
 ---------------No. 900----------------
 1
@@ -2272,7 +2222,7 @@ Midnight 月见夜 longer.sufficed@Thereupon.stea 1
 ---------------No. 906----------------
 Glaucus 格劳克斯 the.increase@in.the 2
 ---------------No. 907----------------
-Conviction 断罪 vanished.in@the.face 2
+Conviction 断罪者 end.Communists@of.various 2
 ---------------No. 908----------------
 9790544
 ---------------No. 909----------------
@@ -2305,7 +2255,7 @@ LeavesofGrass 湖南省衡阳市 08-01 16:20 -> 广东省花都市 08-02 01:39 1
 ---------------No. 920----------------
 9071940
 ---------------No. 921----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 922----------------
 1
@@ -2347,7 +2297,6 @@ Platinum 白金 handed.down@from.the 2
 ---------------No. 937----------------
 0
 ---------------No. 938----------------
-1392 Jessica
 0
 ---------------No. 939----------------
 1
@@ -2400,7 +2349,7 @@ Aak 阿阿 in.almost.all@of.these 1
 1
 whatyouwanted 四川省华蓥市 07-11 09:39 -> 内蒙东胜市 07-11 20:46 2267 30519
 ---------------No. 960----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 961----------------
 1
@@ -2409,7 +2358,7 @@ whatyouwanted 广东省揭阳市 07-27 06:37 -> 广东省高州市 07-27 10:58 8
 1
 LeavesofGrass 河南省灵宝市 07-04 23:45 -> 浙江省慈溪市 07-05 09:48 1011 192
 ---------------No. 963----------------
-14268 Orchid
+already exist!
 -1
 ---------------No. 964----------------
 0
@@ -2437,7 +2386,7 @@ whatyouwanted 山东省莱州市 07-10 10:08 -> 吉林省双辽市 07-10 14:29 4
 1
 whatyouwanted 山东省乳山市 07-22 04:53 -> 安徽省阜阳市 07-22 08:17 674 30519
 ---------------No. 974----------------
-2204 Executor
+wrong password!
 -1
 ---------------No. 975----------------
 3110366
@@ -2459,8 +2408,8 @@ Mayer 梅尔 colonisation@of.America 1
 ---------------No. 982----------------
 Durin 杜林 feudal.society@a.rapid 1
 ---------------No. 983----------------
-1740 Schwarz
-0
+already exist!
+-1
 ---------------No. 984----------------
 queue
 ---------------No. 985----------------
@@ -2477,7 +2426,6 @@ queue
 1
 INSCRIPTIONS 云南省安宁市 08-18 20:50 -> 北京市 08-19 06:40 700 69011
 ---------------No. 991----------------
-2088 Eyjafjalla
 0
 ---------------No. 992----------------
 10622656
@@ -2502,7 +2450,7 @@ LeavesofGrass 陕西省安康市 07-31 17:25 -> 广东省花都市 08-01 01:39 1
 1
 IHEARDthatyouask 新疆吐鲁番市 07-24 05:55 -> 天津市 07-24 06:30 496 69741
 ---------------No. 1001----------------
-logstate=0
+coruser logstate=0
 -1
 ---------------No. 1002----------------
 1
@@ -2520,14 +2468,12 @@ W 达不溜 in.each.single@workshop.Meanti 1
 ---------------No. 1008----------------
 Snowsant 雪雉 new.forms.of@struggle.in 2
 ---------------No. 1009----------------
-5916 FEater
 0
 ---------------No. 1010----------------
 10698324
 ---------------No. 1011----------------
 Steward 史都华德 society.at@large.or 1
 ---------------No. 1012----------------
-12992 Hellagur
 0
 ---------------No. 1013----------------
 3849588
@@ -2586,7 +2532,6 @@ puzzletheNewWorld 湖南省岳阳市 07-10 17:01 -> 河南省登封市 07-11 09:
 ---------------No. 1037----------------
 Hellagur 赫拉格 The.manufacturing@system.took 1
 ---------------No. 1038----------------
-4176 Conviction
 0
 ---------------No. 1039----------------
 1
@@ -2686,8 +2631,7 @@ whatyouwanted 甘肃省兰州市 07-12 21:27 -> 福建省建阳市 07-12 23:59 2
 1
 puzzletheNewWorld 河南省登封市 07-30 09:56 -> 四川省绵竹市 07-30 14:44 299 47885
 ---------------No. 1073----------------
-tmpuser : Skyfire  is_login = 0
--1
+0
 ---------------No. 1074----------------
 Zima 凛冬 industrial@production.was 2
 ---------------No. 1075----------------
@@ -2695,6 +2639,7 @@ Zima 凛冬 industrial@production.was 2
 ---------------No. 1076----------------
 Reed 苇草 has.established@the.worldmarke 2
 ---------------No. 1077----------------
+privilege wrong
 -1
 ---------------No. 1078----------------
 4759165
@@ -2710,6 +2655,7 @@ Specter 幽灵鲨 and.plebeian@lord.and 1
 ---------------No. 1083----------------
 queue
 ---------------No. 1084----------------
+privilege wrong
 -1
 ---------------No. 1085----------------
 1
@@ -2718,14 +2664,13 @@ whatyouwanted 甘肃省兰州市 07-07 21:27 -> 四川省华蓥市 07-08 09:33 1
 1
 LeavesofGrass 河南省灵宝市 07-16 23:45 -> 广东省花都市 07-17 01:39 114 83607
 ---------------No. 1087----------------
-10092 Angelina
 0
 ---------------No. 1088----------------
 Gravel 砾砾 that.each.time@ended.either 1
 ---------------No. 1089----------------
 8253048
 ---------------No. 1090----------------
-5452 Specter
+wrong password!
 -1
 ---------------No. 1091----------------
 126140
@@ -2784,100 +2729,4 @@ Bagpipe 风笛 bourgeoisie@is.itself 2
 1
 LeavesofGrass 浙江省平湖市 07-05 08:59 -> 浙江省慈溪市 07-06 09:48 3706 8492
 ---------------No. 1116----------------
-size= 134
-logout user : Cliffheart  4408
-check user : Cliffheart  0  1
-logout user : Indra  8352
-check user : Indra  0  1
-logout user : Glaucus  11716
-check user : Glaucus  0  2
-logout user : ProjeKTRed  6960
-check user : ProjeKTRed  0  1
-logout user : Angelina  10092
-check user : Angelina  0  1
-logout user : Hellagur  12992
-check user : Hellagur  0  1
-logout user : FEater  5916
-check user : FEater  0  1
-logout user : Swire  14152
-check user : Swire  0  1
-logout user : Reed  14616
-check user : Reed  0  2
-logout user : Rope  13108
-check user : Rope  0  1
-logout user : Rangers  1276
-check user : Rangers  0  3
-logout user : Lava  14500
-check user : Lava  0  1
-logout user : Manticore  1856
-check user : Manticore  0  2
-logout user : Amiya  8584
-check user : Amiya  0  7
-logout user : May  13804
-check user : May  0  6
-logout user : NoirCorne  15196
-check user : NoirCorne  0  1
-logout user : Jessica  1392
-check user : Jessica  0  2
-logout user : Fang  12760
-check user : Fang  0  1
-logout user : Meteor  8700
-check user : Meteor  0  1
-logout user : Ceylon  6612
-check user : Ceylon  0  1
-logout user : Texas  14384
-check user : Texas  0  1
-logout user : Perfumer  6728
-check user : Perfumer  0  1
-logout user : Exusiai  11020
-check user : Exusiai  0  1
-logout user : Myrtle  15428
-check user : Myrtle  0  1
-logout user : Vanilla  232
-check user : Vanilla  0  7
-logout user : Ambriel  9048
-check user : Ambriel  0  1
-logout user : Matoimaru  15544
-check user : Matoimaru  0  1
-logout user : Cuora  11600
-check user : Cuora  0  1
-logout user : Nian  12876
-check user : Nian  0  1
-logout user : Gummy  15080
-check user : Gummy  0  1
-logout user : Firewatch  1624
-check user : Firewatch  0  2
-logout user : Beehunter  10672
-check user : Beehunter  0  2
-logout user : Mayer  11484
-check user : Mayer  0  1
-logout user : Saria  6496
-check user : Saria  0  1
-logout user : Breeze  14848
-check user : Breeze  0  1
-logout user : Conviction  4176
-check user : Conviction  0  2
-logout user : Schwarz  1740
-check user : Schwarz  0  1
-logout user : Gravel  6148
-check user : Gravel  0  1
-logout user : Elysium  9512
-check user : Elysium  0  3
-logout user : Sesa  12064
-check user : Sesa  0  1
-logout user : Spot  3944
-check user : Spot  0  1
-logout user : Orchid  14268
-check user : Orchid  0  1
-logout user : Eyjafjalla  2088
-check user : Eyjafjalla  0  2
-logout user : Adnachiel  10788
-check user : Adnachiel  0  2
-logout user : Dobermann  5568
-check user : Dobermann  0  1
-logout user : BluePoison  8236
-check user : BluePoison  0  1
-logout user : Steward  6380
-check user : Steward  0  1
-Fang  0  1
 bye

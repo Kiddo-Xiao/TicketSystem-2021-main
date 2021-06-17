@@ -97,8 +97,7 @@ void Connector::run() {
         }
         else if( str.substr(0, 4) == "exit" ){
 //            puts("{exit}");
-            strcpy(ans, exit());
-            printf("%s\n", ans);
+            strcpy(ans, Exit());
             break;
         }
         printf("%s\n", ans);
@@ -117,31 +116,10 @@ const char* Connector::clean(){
     return "0";
 }
 
-const char* Connector::exit() {
-//    File<User> USER("USER.dat");
-
-//    vector<User> user_list;
-    vector<int> user_list;
-    user_list.clear();
-    cuser.bpt_user.Find_(make_pair(-1,-1),make_pair(19260817,19491001),user_list);
-    int sz=user_list.size();
-    cout<<"size= "<<sz<<endl;
-    for(int i=0;i<sz;++i){
-        User tmpuser;
-        cuser.USER.Read(tmpuser,user_list[i]);
-        if(tmpuser.logstate){
-            printf("logout user : %s  %d\n", tmpuser.username, user_list[i]);
-            tmpuser.logstate = 0;
-//            tmpuser.privilege = 100;
-            cuser.USER.Write(tmpuser,user_list[i]);
-            cuser.USER.Read(tmpuser, user_list[i]);
-            printf("check user : %s  %d  %d\n", tmpuser.username, tmpuser.logstate, tmpuser.privilege);
-        }
-    }
-    User ff;
-    cuser.USER.Read(ff, 12760);
-    printf("%s  %d  %d\n", ff.username, ff.logstate, ff.privilege);
-    return "bye";
+const char* Connector::Exit() {
+    printf("%s\n", "bye");
+    exit(0);
+    return "0";
 }
 
 int Connector::split(string str, char c, string *&ans) {

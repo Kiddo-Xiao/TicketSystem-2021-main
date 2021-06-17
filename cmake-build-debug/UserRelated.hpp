@@ -11,12 +11,13 @@ class Connector;
 class User{
 public:
     char username[21],password[31],name[21],mailAddr[31];
-    int privilege,logstate,ordernum;
+    int privilege;//权限
+    int ordernum;//指令总数
 
-    User(){privilege=logstate=ordernum=0;}
+    User(){privilege=ordernum=0;}
 
-    User(const char* u,const char* p,const char* n,const char* m,const int g=0,const int s=0,const int o=0):
-            privilege(g),logstate(s),ordernum(o){
+    User(const char* u,const char* p,const char* n,const char* m,const int g=0,const int o=0):
+            privilege(g),ordernum(o){
         strcpy(username,u),strcpy(password,p),strcpy(name,n),strcpy(mailAddr,m);
     }
 
