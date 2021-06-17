@@ -1,0 +1,158 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/BasicElements.hpp
+iostream
+-
+cmath
+-
+cstring
+-
+cstdio
+-
+iomanip
+-
+
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Bpt.hpp
+iostream
+-
+cstdio
+-
+cstring
+-
+fstream
+-
+cassert
+-
+vector
+-
+
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Connect.cpp
+Connect.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Connect.hpp
+assert.h
+-
+Include.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Include.hpp
+UserRelated.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/UserRelated.hpp
+TrainRelated.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/TrainRelated.hpp
+OrderRelated.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/OrderRelated.hpp
+BasicElements.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/BasicElements.hpp
+
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Connect.hpp
+BasicElements.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/BasicElements.hpp
+iostream
+-
+cmath
+-
+cstring
+-
+cstdio
+-
+vector
+-
+UserRelated.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/UserRelated.hpp
+TrainRelated.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/TrainRelated.hpp
+OrderRelated.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/OrderRelated.hpp
+
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/File_oi.hpp
+iostream
+-
+cstdio
+-
+cstring
+-
+fstream
+-
+
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Include.hpp
+BasicElements.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/BasicElements.hpp
+iostream
+-
+cmath
+-
+cstring
+-
+cstdio
+-
+vector
+-
+algorithm
+-
+iomanip
+-
+iostream
+-
+fstream
+-
+sstream
+-
+Bpt.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Bpt.hpp
+File_oi.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/File_oi.hpp
+
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/OrderRelated.cpp
+OrderRelated.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/OrderRelated.hpp
+Include.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Include.hpp
+Connect.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Connect.hpp
+
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/OrderRelated.hpp
+TrainRelated.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/TrainRelated.hpp
+UserRelated.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/UserRelated.hpp
+
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/TrainRelated.cpp
+TrainRelated.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/TrainRelated.hpp
+Connect.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Connect.hpp
+Include.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Include.hpp
+
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/TrainRelated.hpp
+Include.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Include.hpp
+Bpt.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Bpt.hpp
+
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/UserRelated.cpp
+UserRelated.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/UserRelated.hpp
+Connect.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Connect.hpp
+
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/UserRelated.hpp
+BasicElements.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/BasicElements.hpp
+Bpt.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Bpt.hpp
+File_oi.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/File_oi.hpp
+cstring
+-
+
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/main.cpp
+Include.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Include.hpp
+Connect.hpp
+C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Connect.hpp
+

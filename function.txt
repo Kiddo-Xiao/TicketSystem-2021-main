@@ -1,0 +1,36 @@
+template<typename TYPE_KEY, typename TYPE_VAL> class BPlusTree // 调用bpt的时候要BPlusTree<type, type> xxx
+
+typedef std :: pair<TYPE_KEY, TYPE_VAL> TYPE; // 下面的TYPE都是一个pair
+
+void Clean() // Clean
+void Insert(TYPE key, int x = 0, int fa = -1, int fpos = -1) // 插入一个pair<TYPE_KEY, TYPE_VAL>
+void Delete(TYPE key, int x = 0, int fa = -1, int fpos = -1) // 删除一个pair<TYPE_KEY, TYPE_VAL>
+bool Exist(TYPE key, int x = 0) // 查询pair<TYPE_KEY, TYPE_VAL>存不存在
+bool Exist(TYPE_KEY key, int x = 0) // 查询key存不存在
+void Find(TYPE_KEY key, std :: vector<TYPE_VAL> &vec, int x = 0) // 找到树中key值等于这个的所有val，存在vector里
+void Find(TYPE_KEY low, TYPE_KEY high, std :: vector<TYPE_VAL> &vec, int x = 0) // 找到树中key值在区间[low, high]之间所有的val，存在vector里
+
+
+
+!!!   coonetor & ini()
+
+
+Users::init(this);
+Trains::init(this);
+
+bpuser.getall(user_list);
+
+
+
+bpt:
+bpt_xxx  "Bpt_Xxx"
+
+
+File
+"XXX"
+        File<pair<pair<int,int>,int>>STA_TRAIN;
+
+
+改change -> write
+
+用法的话就是File<Type> xxx;然后xxx.Read(Type,pos)，xxx.Write(Type,pos)，xxx.Delete(pos)，然后要新插入一个的话要找到一个新位置就xxx.Newpos()
