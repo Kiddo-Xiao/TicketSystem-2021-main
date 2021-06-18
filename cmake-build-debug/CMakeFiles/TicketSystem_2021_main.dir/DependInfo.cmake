@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Connect.cpp" "C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/CMakeFiles/TicketSystem_2021_main.dir/Connect.cpp.obj"
-  "C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/OrderRelated.cpp" "C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/CMakeFiles/TicketSystem_2021_main.dir/OrderRelated.cpp.obj"
-  "C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/TrainRelated.cpp" "C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/CMakeFiles/TicketSystem_2021_main.dir/TrainRelated.cpp.obj"
-  "C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/UserRelated.cpp" "C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/CMakeFiles/TicketSystem_2021_main.dir/UserRelated.cpp.obj"
-  "C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/main.cpp" "C:/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/CMakeFiles/TicketSystem_2021_main.dir/main.cpp.obj"
+  "/mnt/c/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/Connect.cpp" "/mnt/c/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/CMakeFiles/TicketSystem_2021_main.dir/Connect.cpp.o"
+  "/mnt/c/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/OrderRelated.cpp" "/mnt/c/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/CMakeFiles/TicketSystem_2021_main.dir/OrderRelated.cpp.o"
+  "/mnt/c/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/TrainRelated.cpp" "/mnt/c/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/CMakeFiles/TicketSystem_2021_main.dir/TrainRelated.cpp.o"
+  "/mnt/c/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/UserRelated.cpp" "/mnt/c/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/CMakeFiles/TicketSystem_2021_main.dir/UserRelated.cpp.o"
+  "/mnt/c/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/main.cpp" "/mnt/c/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug/CMakeFiles/TicketSystem_2021_main.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -824,7 +824,7 @@ buy_ticket -u Frostleaf -i LeavesofGrass -d 07-31 -n 4582 -f 浙江省平湖市 
 buy_ticket -u Catapult -i LeavesofGrass -d 07-13 -n 19551 -f 湖南省衡阳市 -t 陕西省安康市 -q true
 modify_profile -c Amiya -u Savage -p TwXMVLtwKA -m guilds.now@no.longer -g 2
 query_ticket -s 辽宁省抚顺市 -t 新疆伊宁市 -d 07-28 -p cost
-modify_profile -c Melantha -u Chen -g 2z
+modify_profile -c Melantha -u Chen -g 2
 query_ticket -s 黑龙江省五大连池市 -t 广东省高要市 -d 06-22 -p cost
 query_ticket -s 广东省高要市 -t 湖北省枣阳市 -d 07-28 -p time
 add_train -i puzzletheNewWorld -n 6 -m 47885 -s 辽宁省辽阳市|湖南省岳阳市|黑龙江省尚志市|北京市|河南省登封市|四川省绵竹市 -p 379|426|159|455|299 -x 13:05 -t 231|183|394|418|288 -o 5|7|9|4 -d 06-11|08-18 -y O

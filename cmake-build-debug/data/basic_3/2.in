@@ -1019,22 +1019,12 @@ buy_ticket -u NoirCorne -i puzzletheNewWorld -d 07-29 -n 8831 -f 辽宁省辽阳
 query_profile -c Amiya -u Earthspirit
 query_profile -c Vanilla -u Shining
 modify_profile -c Elysium -u NoirCorne -p bNQo!KQsdQrQ
-logout -u NoirCorne
-login -u NoirCorne -p bNQo!KQsdQrQ
-
 buy_ticket -u Cliffheart -i LeavesofGrass -d 07-25 -n 12090 -f 浙江省平湖市 -t 广东省花都市
 buy_ticket -u May -i LeavesofGrass -d 07-22 -n 3718 -f 陕西省安康市 -t 河南省偃师市 -q true
-logout -u NoirCorne
-login -u NoirCorne -p bNQo!KQsdQrQ
-exit
-
 query_ticket -s 江苏省扬州市 -t 新疆米泉市 -d 07-01 -p time
 logout -u Hibiscus
 buy_ticket -u Nian -i LeavesofGrass -d 07-15 -n 1981 -f 辽宁省抚顺市 -t 宁夏石嘴山市
 query_profile -c Elysium -u Ambriel
-logout -u NoirCorne
-login -u NoirCorne -p bNQo!KQsdQrQ
-exit
 buy_ticket -u Matoimaru -i INSCRIPTIONS -d 07-25 -n 14004 -f 黑龙江省五大连池市 -t 新疆米泉市 -q false
 query_ticket -s 福建省建阳市 -t 内蒙东胜市 -d 07-20 -p cost
 query_ticket -s 河北省河间市 -t 新疆伊宁市 -d 08-02 -p cost
@@ -1123,6 +1113,4 @@ buy_ticket -u Glaucus -i LeavesofGrass -d 07-20 -n 7318 -f 河北省河间市 -t
 query_profile -c Glaucus -u Franka
 modify_profile -c Rangers -u Bagpipe -p mFAWzDzeOm9h -m bourgeoisie@is.itself
 query_ticket -s 浙江省平湖市 -t 浙江省慈溪市 -d 07-05 -p time
-logout -u NoirCorne
-login -u NoirCorne -p bNQo!KQsdQrQ
 exit
