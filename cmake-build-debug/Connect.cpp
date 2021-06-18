@@ -8,8 +8,8 @@
 
 using namespace std;
 
-//argv:×Ö·û´®”µ½M
-//argc:…¢”µ”µÁ¿
+//argv:????????M
+//argc:????????
 
 //basic functions:
 
@@ -262,7 +262,7 @@ const char* Connector::add_train(string str) {
         else assert(0);
     }
 
-    Date begin=read_date(d.substr(0,5));//½ØÈ¡dÄ0-5
+    Date begin=read_date(d.substr(0,5));//???d??0-5
     Date end=read_date(d.substr(6,5));
     char stations[105][41];
     int price[105],traveltime[105],stopovertime[105];
@@ -288,7 +288,7 @@ const char* Connector::add_train(string str) {
 
     delete []argv;
     return Connector::ctrain.add_train(i_.c_str(),n,m,stations,price,tim,
-                            traveltime,stopovertime,begin,end,y.c_str()[0]);
+                                       traveltime,stopovertime,begin,end,y.c_str()[0]);
 }
 
 const char* Connector::release_train(string str) {

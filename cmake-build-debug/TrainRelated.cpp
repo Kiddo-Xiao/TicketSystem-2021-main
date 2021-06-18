@@ -331,6 +331,7 @@ const char* Trains::query_transfer(Date date, const char *from, const char *to, 
     int sta_f_trainnum=sta_f.trainnum;
     Ticket ticket1,ticket2,ticket1_,ticket2_;
     int ans=0x7fffffff;
+//    cout<<"sta_f_trainnum= "<<sta_f_trainnum<<endl;
     for(int i=1;i<=sta_f_trainnum;++i){
         int pos1=bpt_sta_train.Find(make_pair(hash_f,i));
         pair<pair<int,int>,int> sta1;
@@ -340,17 +341,27 @@ const char* Trains::query_transfer(Date date, const char *from, const char *to, 
         Train tmp_train;
         TRAIN.Read(tmp_train,tmp_train_pos);
 
-        int pos2=bpt_sta_train.Find(make_pair(hash_f,i));
+        int pos2=bpt_sta_train.Find(make_pair(hash_f,i));//本站的第几量火车
         pair<pair<int,int>,int> sta2;
-        STA_TRAIN.Read(sta2,pos2);
+        STA_TRAIN.Read(sta2,pos2);//sta2: <trainID.hash , tmptrain的第几站>
         int pos=sta2.second;
         Time t1=Time(date,tmp_train.startTime.hour,tmp_train.startTime.minute)
                 +tmp_train.travelTimes[pos]+tmp_train.stopoverTimes[pos];
-        Seat restseat=bpt_seat.Find(hash.hash_it(tmp_train.trainID));
+//        cout<<tmp_train.trainID<<endl;//pass
+//        if(hash.hash_it(tmp_train.trainID)==sta2.first){cout<<"right"<<endl;}
+//pass!
+//        cout<<"sudiaojd"<<endl;//no cout
         int delt_day=(date-(t1.date-date))-tmp_train.Date1;
         if(((date - (t1.date - date)) < tmp_train.Date1) || (tmp_train.Date2 < (date- (t1.date - date)))) continue;
 
+
+        int restseat_pos=bpt_seat.Find(hash.hash_it(tmp_train.trainID));
+        Seat restseat;
+        SEAT.Read(restseat,restseat_pos);
+
+//        cout<<"wow3"<<endl;
         int min_seat=restseat.seat[delt_day][pos];
+//        cout<<"wow4"<<endl;
         t1.date=date;
         for(int j=pos+1;j<tmp_train.stationNum;j++){
             if(hash.hash_it(tmp_train.stations[j])!=hash_t){

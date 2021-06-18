@@ -28,6 +28,7 @@ query_profile -c Dobermann -u Saria
 query_profile -c Vulcan -u Bagpipe
 query_profile -c Vanilla -u Perfumer
 login -u NoirCorne -p 0x_JCEjl27U!-Iqqic
+login -u NoirCorne -p bNQo!KQsdQrQ
 query_profile -c BluePoison -u Matterhorn
 login -u Matterhorn -p WYVXT4EwxGpSGl
 query_profile -c Pramanix -u Chen

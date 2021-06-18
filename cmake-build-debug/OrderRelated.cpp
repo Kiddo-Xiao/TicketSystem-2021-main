@@ -14,6 +14,15 @@ const char* Orders::buy_ticket(const char *u, const char *id, Date date, int n, 
     if(strcmp(q,"false")&&strcmp(q,"true")){return "-1";}
     if(!connect->loguser.count(u)){return "-1";}
 
+    //debug
+    string aa="NoirCorne";
+    int nnpos=connect->cuser.bpt_user.Find(hash.hash_it(aa.c_str()));
+    cout<<"position : "<<nnpos<<endl;
+    User nn;
+    USER.Read(nn,nnpos);
+    cout<<"NoirCorne now password : "<<nn.password<<endl;
+
+
     int tmptrain_pos=connect->ctrain.bpt_train.Find(hash_ID);
     Train tmptrain;
     TRAIN.Read(tmptrain,tmptrain_pos);
@@ -106,10 +115,10 @@ const char* Orders::buy_ticket(const char *u, const char *id, Date date, int n, 
 
         use_order.Insert(make_pair(make_pair(hash_u,tmpuser.ordernum),order_pos));
 //        cout<<"order_pos= "<<order_pos<<endl;
-//        int aaa=use_order.Find(make_pair(hash_u,tmpuser.ordernum));
+        int aaa=use_order.Find(make_pair(hash_u,tmpuser.ordernum));
 //        cout<<"aaa= "<<aaa<<endl;
-//        Order bbb;
-//        USE_ORDER.Read(bbb,aaa);
+        Order bbb;
+        USE_ORDER.Read(bbb,aaa);
 //        cout<<"use_order_pos= "<<aaa<<endl;
 //        cout<<"order.status= "<<bbb.status<<endl;
 

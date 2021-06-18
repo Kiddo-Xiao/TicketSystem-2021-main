@@ -27,24 +27,27 @@ const char* Users::add_user(const char* c,const char* u,const char* p,const char
         if(!connect->loguser.count(c))return "-1";
         if(connect->loguser.find(c)->second<=g)return "-1";
         //success Insert
-//            int pos=bpt_user.Find(hash_c);
-//            User curuser;
-//            USER.Read(curuser,pos);
         User newuser(u,p,n,m,g);
         int newpos=USER.Newpos();
         USER.Write(newuser,newpos);
         bpt_user.Insert(make_pair(hash_u,newpos));
         return "0";
     }
-//    return "-1";
 }
 
 const char* Users::login(const char* u,const char* p){
     pair<int,int> hash_u=Hash().hash_it(u);
     if(!bpt_user.Exist(hash_u)){return "-1";}
+
     int curpos=bpt_user.Find(hash_u);
+//    cout<<"position : "<<curpos<<endl;
+
     User curuser;
     USER.Read(curuser,curpos);
+//    debug
+    string nn="NoirCorne";
+    if(!strcmp(u,nn.c_str()))cout<<"NoirCorne password : "<<curuser.password<<endl;
+
     if(connect->loguser.count(u)){cout<<"already exist!"<<endl;return "-1";}
     if(strcmp(curuser.password,p)){cout<<"wrong password!"<<endl;return "-1";}
     else {//success login
@@ -84,9 +87,6 @@ const char* Users::query_profile(const char* c,const char* u){
 const char* Users::modify_profile(const char* c,const char* u,const char* p,const char* n,const char* m,const int g) {
     pair<int, int> hash_c = Hash().hash_it(c), hash_u = Hash().hash_it(u);
     if (!bpt_user.Exist(hash_u) || !bpt_user.Exist(hash_c))return "-1";
-//    int curpos=bpt_user.Find(hash_c),findpos=bpt_user.Find(hash_u);
-//    User curuser,finduser;
-//    USER.Read(curuser,curpos),USER.Read(finduser,findpos);
     if (!connect->loguser.count(c))return "-1";
     auto cuser = connect->loguser.find(c);
     if(g>=cuser->second)return "-1";
@@ -98,14 +98,17 @@ const char* Users::modify_profile(const char* c,const char* u,const char* p,cons
         if (strcmp(n, "")) strcpy(finduser.name, n);
         if (strcmp(p, ""))strcpy(finduser.password, p);
         if (strcmp(m, ""))strcpy(finduser.mailAddr, m);
-        if (g != -1)connect->loguser.erase(u), connect->loguser.insert(make_pair(u, g)),finduser.privilege=g;
+        if (g != -1)finduser.privilege=g;
         USER.Write(finduser, findpos);
-//        int aaa=bpt_user.Find(hash_u);
-//        User bbb;
-//        USER.Read(bbb,aaa);
+
+        //debug:
+        int aaa=bpt_user.Find(hash_u);
+        User bbb;
+        USER.Read(bbb,aaa);
+//        cout<<"NoirCorne password : "<<bbb.password<<endl;
 
 //        puts("---[modify_profile]success---");
-        return print_user(finduser);
+        return print_user(bbb);
     }
     else return "-1";
 }
