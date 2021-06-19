@@ -161,6 +161,7 @@ Ticket Trains::find_ticket(Date date, const char *from, const char *to, const ch
     int sta_f_pos=bpt_station.Find(hash_f),sta_t_pos=bpt_station.Find(hash_t);
     Station sta_f,sta_t;
     STATION.Read(sta_f,sta_f_pos),STATION.Read(sta_t,sta_t_pos);
+
     vector<Ticket> tickets;
     int sta_f_trainnum=sta_f.trainnum;
     for(int i=1;i<=sta_f_trainnum;++i){
@@ -187,8 +188,12 @@ Ticket Trains::find_ticket(Date date, const char *from, const char *to, const ch
         t1.date=date;
         if(t1.hour<hour||(t1.hour==hour&&t1.minute<minute))t1.date=t1.date+1;
 
-        Time delt_time=t1-(tmp_train.travelTimes[pos]+tmp_train.stopoverTimes[pos]);
-        int delt_day=delt_time.date-tmp_train.Date1;
+        Time t2=t1-(tmp_train.travelTimes[pos]+tmp_train.stopoverTimes[pos]);
+        if(tmp_train.Date2<t2.date)continue;
+        if(t2.date<tmp_train.Date1)t2.date=tmp_train.Date1;
+        t1=t2+tmp_train.travelTimes[pos]+tmp_train.stopoverTimes[pos];
+
+        int delt_day=t2.date-tmp_train.Date1;
 
         int seat_pos=bpt_seat.Find(hash.hash_it(tmp_train.trainID));;
         Seat restseat;
@@ -197,8 +202,8 @@ Ticket Trains::find_ticket(Date date, const char *from, const char *to, const ch
         int min_seat=restseat.seat[delt_day][pos];
         for(int j=pos+1;j<tmp_train.stationNum;j++){
             if(hash.hash_it(tmp_train.stations[j])==hash_t){
-                Time t2=t1+(tmp_train.travelTimes[j]-(tmp_train.travelTimes[pos]+tmp_train.stopoverTimes[pos]));
-                tickets.push_back(Ticket(tmp_train.trainID,from,to,tmp_train.prices[j]-tmp_train.prices[pos],min_seat,t1,t2));
+                Time tj=t1+(tmp_train.travelTimes[j]-(tmp_train.travelTimes[pos]+tmp_train.stopoverTimes[pos]));
+                tickets.push_back(Ticket(tmp_train.trainID,from,to,tmp_train.prices[j]-tmp_train.prices[pos],min_seat,t1,tj));
                 break;
             }
             if(restseat.seat[delt_day][j]<min_seat)min_seat=restseat.seat[delt_day][j];
