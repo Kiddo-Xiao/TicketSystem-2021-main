@@ -65,6 +65,7 @@ const char* Orders::buy_ticket(const char *u, const char *id, Date date, int n, 
     Time from_time=tmptrain.startTime;from_time.date=date;
     from_time=from_time+(tmptrain.travelTimes[from_pos]+tmptrain.stopoverTimes[from_pos]);
     int delt_day=(date-(from_time.date-date))-tmptrain.Date1;
+//    printf("delt_day = %d\n", delt_day);
     if((date-(from_time.date-date)<tmptrain.Date1)||(tmptrain.Date2<(date-(from_time-date)))){return "-1";}
     from_time.date=date;
     Time to_time=from_time+(tmptrain.travelTimes[to_pos]-(tmptrain.travelTimes[from_pos]+tmptrain.stopoverTimes[from_pos]));
@@ -139,7 +140,8 @@ const char* Orders::query_order(const char *u) {
     if(!connect->loguser.count(u))return "-1";
 
     char* ans;
-    char head[12500];
+    char head[18888];
+    char tmp[188];
 //    cout<<"ordernum= "<<tmpuser.ordernum<<endl;
     int user_pos=connect->cuser.bpt_user.Find(hash_u);
     User tmpuser;
@@ -147,20 +149,19 @@ const char* Orders::query_order(const char *u) {
     snprintf(head,sizeof(head),"%d",tmpuser.ordernum);
     for(int i=tmpuser.ordernum;i>=1;i--) {
         int order_pos=use_order.Find(make_pair(hash_u, i));
-//        cout<<"use_order_pos= "<<order_pos<<endl;
+////        cout<<"use_order_pos= "<<order_pos<<endl;
         Order order ;
         USE_ORDER.Read(order,order_pos);
-//        cout<<"No."<<(tmpuser.ordernum+1-i)<<" : "<<order.train_ID<<endl;
-        char tmp[128];
-//        cout<<"order_trainname: "<<order.ticket.train<<endl;
-//        cout<<"order_seatnum: "<<order.ticket.seat<<endl;
+////        cout<<"No."<<(tmpuser.ordernum+1-i)<<" : "<<order.train_ID<<endl;
+////        cout<<"order_trainname: "<<order.ticket.train<<endl;
+////        cout<<"order_seatnum: "<<order.ticket.seat<<endl;
         snprintf(tmp, sizeof(tmp), "\n[%s] %s %s %02d-%02d %02d:%02d -> %s %02d-%02d %02d:%02d %d %d", order.status,
                  order.ticket.train,
                  order.ticket.station_from, order.ticket.depart.date.month, order.ticket.depart.date.day,
                  order.ticket.depart.hour, order.ticket.depart.minute,
                  order.ticket.station_to, order.ticket.arrive.date.month, order.ticket.arrive.date.day,
                  order.ticket.arrive.hour, order.ticket.arrive.minute, order.ticket.price, order.ticket.seat);
-//        cout<<tmp<<endl;
+////        cout<<tmp<<endl;
         strcat(head, tmp);
     }
     ans=head;
@@ -184,6 +185,8 @@ const char* Orders::refund_ticket(const char *u, int n) {
     int tmptrain_pos=connect->ctrain.bpt_train.Find(hash_id);
     Train tmptrain;
     TRAIN.Read(tmptrain,tmptrain_pos);
+    //debug
+//    cout<<tmptrain.trainID<<" rest seat : "<<tmptrain.seatNum
 
     if(!strcmp(order.status,"refunded")){return "-1";}
     else if(!strcmp(order.status,"pending")){
@@ -252,12 +255,12 @@ const char* Orders::refund_ticket(const char *u, int n) {
             STATION.Read(tmp_from,tmp_from_pos_),STATION.Read(tmp_to,tmp_to_pos_);
             int tmp_from_cnt=tmp_from.trainnum,tmp_to_cnt=tmp_to.trainnum;
             int tmp_from_pos=-1,tmp_to_pos=-1;
-            for(int i=1;i<=tmp_from_cnt;++i){
-                int pos1=connect->ctrain.bpt_sta_train.Find(make_pair(hash.hash_it(tmporder.ticket.station_from),i));
+            for(int k=1;k<=tmp_from_cnt;++k){
+                int pos1=connect->ctrain.bpt_sta_train.Find(make_pair(hash.hash_it(tmporder.ticket.station_from),k));
                 pair<pair<int,int>,int> sta1;
                 STA_TRAIN.Read(sta1,pos1);
                 if(hash_id==sta1.first){
-                    int pos2=connect -> ctrain.bpt_sta_train.Find(make_pair(hash.hash_it(tmporder.ticket.station_from), i));
+                    int pos2=connect -> ctrain.bpt_sta_train.Find(make_pair(hash.hash_it(tmporder.ticket.station_from), k));
                     pair<pair<int,int>,int> sta2;
                     STA_TRAIN.Read(sta2,pos2);
                     tmp_from_pos = sta2.second;
@@ -266,12 +269,12 @@ const char* Orders::refund_ticket(const char *u, int n) {
                 }
             }
 
-            for(int i=1;i<=tmp_to_cnt;++i){
-                int pos1=connect->ctrain.bpt_sta_train.Find(make_pair(hash.hash_it(tmporder.ticket.station_to),i));
+            for(int k=1;k<=tmp_to_cnt;++k){
+                int pos1=connect->ctrain.bpt_sta_train.Find(make_pair(hash.hash_it(tmporder.ticket.station_to),k));
                 pair<pair<int,int>,int> sta1;
                 STA_TRAIN.Read(sta1,pos1);
                 if(hash_id==sta1.first){
-                    int pos2=connect->ctrain.bpt_sta_train.Find(make_pair(hash.hash_it(tmporder.ticket.station_to),i));
+                    int pos2=connect->ctrain.bpt_sta_train.Find(make_pair(hash.hash_it(tmporder.ticket.station_to),k));
                     pair<pair<int,int>,int> sta2;
                     STA_TRAIN.Read(sta2,pos2);
                     tmp_to_pos=sta2.second;
@@ -280,10 +283,10 @@ const char* Orders::refund_ticket(const char *u, int n) {
                 }
             }
             int minn=0x7fffffff;
-            for(int i=tmp_from_pos;i<tmp_to_pos;++i)minn=min(minn,seat.seat[order.d_day][i]);
+            for(int k=tmp_from_pos;k<tmp_to_pos;++k)minn=min(minn,seat.seat[order.d_day][k]);
             if(minn>=tmporder.ticket.seat) {
                 strcpy(tmporder.status, "success");
-                for (int i = tmp_from_pos; i < tmp_to_pos; ++i)seat.seat[order.d_day][i] -= tmporder.ticket.seat;
+                for (int k = tmp_from_pos; k < tmp_to_pos; ++k)seat.seat[order.d_day][k] -= tmporder.ticket.seat;
                 int final_order_pos = connect->corder.bpt_order.Find(
                         make_pair(make_pair(hash.hash_it(tmporder.train_ID), tmporder.d_day), tmporder.id_train));
                 int final_use_pos = connect->corder.use_order.Find(

@@ -54,8 +54,8 @@ const char* Users::login(const char* u,const char* p){
 //    cout<<"NoirCorne now password : "<<nn.password<<endl;
 
 
-    if(connect->loguser.count(u)){cerr<<"already exist!"<<endl;return "-1";}
-    if(strcmp(curuser.password,p)){cerr<<"wrong password!"<<endl;return "-1";}
+    if(connect->loguser.count(u)){return "-1";}
+    if(strcmp(curuser.password,p)){return "-1";}
     else {//success login
         connect->loguser.insert(make_pair(u,curuser.privilege));
         return "0";
@@ -72,16 +72,16 @@ const char* Users::logout(const char *u){
 
 const char* Users::query_profile(const char* c,const char* u){
     pair<int,int> hash_c=Hash().hash_it(c),hash_u=Hash().hash_it(u);
-    if(!bpt_user.Exist(hash_u)||!bpt_user.Exist(hash_c)){cerr<<"query_profile---sb not exist!  ";return "-1";}
+    if(!bpt_user.Exist(hash_u)||!bpt_user.Exist(hash_c)){return "-1";}
 //    int curpos=bpt_user.Find(hash_c),findpos=bpt_user.Find(hash_u);
 //    User curuser,finduser;
 //    USER.Read(curuser,curpos),USER.Read(finduser,findpos);
-    if(!connect->loguser.count(c)) { cerr<<"coruser logstate=0"<<endl; return "-1";}// 486 not this reason ???
+    if(!connect->loguser.count(c)) { return "-1";}// 486 not this reason ???
     auto cpri=connect->loguser.find(c);
     int findpos=bpt_user.Find(hash_u);
     User finduser;
     USER.Read(finduser,findpos);
-    if(cpri->second<finduser.privilege){cerr<<"privilege wrong"<<endl;return "-1";}
+    if(cpri->second<finduser.privilege){return "-1";}
     if(cpri->second==finduser.privilege&&strcmp(cpri->first.c_str(),finduser.username)){return "-1";}
 
     else {//success check

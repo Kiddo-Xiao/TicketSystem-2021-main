@@ -107,10 +107,12 @@ public:
         else {
             int del=x-tmp.minute;
             tmp.minute=60-del%60;
-            tmp.hour-=(1+del/60);
+            if(tmp.minute == 60) tmp.minute = 0;
+            tmp.hour-=(1+ (del - 1)/60);
             if(tmp.hour<0){
+                tmp.date=tmp.date-(1+(-tmp.hour - 1)/24);
                 tmp.hour=24-((-tmp.hour)%24);
-                tmp.date=tmp.date-(1+(-tmp.hour)/24);
+                if(tmp.hour == 24) tmp.hour = 0;
             }
         }
         return tmp;
@@ -127,7 +129,7 @@ public:
 
     bool operator<(Time other){
         if(!(other.date==date))return date<other.date ? 1:0;
-        if(!hour==other.hour)return hour<other.hour ? 1:0;
+        if(hour!=other.hour)return hour<other.hour ? 1:0;
         return minute<other.minute ? 1:0;
     }
 

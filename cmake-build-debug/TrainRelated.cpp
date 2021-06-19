@@ -365,7 +365,9 @@ const char* Trains::query_transfer(Date date, const char *from, const char *to, 
                 Time t2=t1+(tmp_train.travelTimes[j]-(tmp_train.travelTimes[pos]+tmp_train.stopoverTimes[pos]));
                 ticket1=Ticket(tmp_train.trainID,from,tmp_train.stations[j],tmp_train.prices[j]-tmp_train.prices[pos],min_seat,t1,t2);
                 ticket2=find_ticket(t2.date,tmp_train.stations[j],to,op,tmp_train.trainID,t2.hour,t2.minute);
-                if(ticket2.price==-1){if(restseat.seat[delt_day][j]<min_seat){min_seat=restseat.seat[delt_day][j];continue;}}
+                if(ticket2.price==-1){if(restseat.seat[delt_day][j]<min_seat)min_seat=restseat.seat[delt_day][j];continue;}
+
+//                printf("ans == %d\n", ans);
                 if(op[0]=='t'){
                     if((ticket2.arrive-ticket1.depart<ans)||
                     (ticket2.arrive-ticket1.depart==ans)&&(ticket1.arrive-ticket1.depart<ticket1_.arrive-ticket1_.depart)){
