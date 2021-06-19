@@ -368,7 +368,7 @@ const char* Trains::query_transfer(Date date, const char *from, const char *to, 
                         ans=ticket2.arrive-ticket1.depart;
                     }
                 }else {
-                    if(ticket1.price+ticket2.price<ans){
+                    if((ticket1.price + ticket2.price < ans) || ((ticket1.price + ticket2.price == ans) && (ticket1.price < ticket1_.price))){
                         ticket1_=ticket1,ticket2_=ticket2;
                         ans=ticket1.price+ticket2.price;
                     }
@@ -385,8 +385,8 @@ const char* Trains::query_transfer(Date date, const char *from, const char *to, 
             ticket1_.station_to, ticket1_.arrive.date.month, ticket1_.arrive.date.day,
             ticket1_.arrive.hour, ticket1_.arrive.minute, ticket1_.price, ticket1_.seat);
     char tmp[128];
-    snprintf(tmp, sizeof(tmp), "%s %s %02d-%02d %02d:%02d -> %s %02d-%02d %02d:%02d %d %d", ticket2_.train,
-             ticket2_.station_from, ticket2_.depart.date.month, ticket2_.depart.date.day,
+    snprintf(tmp, sizeof(tmp), "%s %s %02d-%02d %02d:%02d -> %s %02d-%02d %02d:%02d %d %d",
+             ticket2_.train,ticket2_.station_from, ticket2_.depart.date.month, ticket2_.depart.date.day,
              ticket2_.depart.hour, ticket2_.depart.minute,
              ticket2_.station_to, ticket2_.arrive.date.month, ticket2_.arrive.date.day,
              ticket2_.arrive.hour, ticket2_.arrive.minute, ticket2_.price, ticket2_.seat);
