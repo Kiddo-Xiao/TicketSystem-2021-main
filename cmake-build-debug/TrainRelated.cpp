@@ -233,7 +233,7 @@ Ticket Trains::find_ticket(Date date, const char *from, const char *to, const ch
 
 const char* Trains::query_ticket(Date date,const char* from,const char* to,const char* op) {
     pair<int,int> hash_f=hash.hash_it(from),hash_t=hash.hash_it(to);
-    if(!bpt_station.Exist(hash_f)||!bpt_station.Exist(hash_t)){return "-1";}
+    if(!bpt_station.Exist(hash_f)||!bpt_station.Exist(hash_t)){return "0";}
     if(hash_f==hash_t){return "-1";}
     if(strcmp(op,"time")&&strcmp(op,"cost")){return "-1";}
     int sta_f_pos=bpt_station.Find(hash_f),sta_t_pos=bpt_station.Find(hash_t);
