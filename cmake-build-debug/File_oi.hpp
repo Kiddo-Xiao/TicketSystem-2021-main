@@ -37,14 +37,17 @@ public:
 
     template<class T>
     void Read(T &x, int pos) {
+//        io.clear();
         io.seekg(pos, std :: ios :: beg);
         io.read(reinterpret_cast<char *>(&x), sizeof(x));
     }
 
     template<class T>
     void Write(T &x, int pos) {
+//        io.clear();
         io.seekg(pos, std :: ios :: beg);
         io.write(reinterpret_cast<char *>(&x), sizeof(x));
+        io.flush();
     }
 
     int Newpos() {

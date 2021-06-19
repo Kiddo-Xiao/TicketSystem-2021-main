@@ -1,11 +1,14 @@
 #include "OrderRelated.hpp"
 #include "Include.hpp"
 #include "Connect.hpp"
+#include "File_oi.hpp"
 
 using namespace std;
 
 const char* Orders::buy_ticket(const char *u, const char *id, Date date, int n, const char *from, const char *to,
                                const char *q) {
+//    io.clear();
+
     pair<int, int> hash_u = hash.hash_it(u), hash_ID = hash.hash_it(id), hash_f = hash.hash_it(
             from), hash_t = hash.hash_it(to);
     if ((!connect->cuser.bpt_user.Exist(hash_u)) || (!connect->ctrain.bpt_train.Exist(hash_ID)) ||
@@ -14,13 +17,13 @@ const char* Orders::buy_ticket(const char *u, const char *id, Date date, int n, 
     if(strcmp(q,"false")&&strcmp(q,"true")){return "-1";}
     if(!connect->loguser.count(u)){return "-1";}
 
-    //debug
-    string aa="NoirCorne";
-    int nnpos=connect->cuser.bpt_user.Find(hash.hash_it(aa.c_str()));
-    cerr<<"position : "<<nnpos<<endl;
-    User nn;
-    USER.Read(nn,nnpos);
-    cerr<<"NoirCorne now password : "<<nn.password<<endl;
+//    //debug
+//    string aa="NoirCorne";
+//    int nnpos=connect->cuser.bpt_user.Find(hash.hash_it(aa.c_str()));
+//    cout<<"position : "<<nnpos<<endl;
+//    User nn;
+//    USER.Read(nn,nnpos);
+//    cout<<"NoirCorne now password : "<<nn.password<<endl;
 
 
     int tmptrain_pos=connect->ctrain.bpt_train.Find(hash_ID);

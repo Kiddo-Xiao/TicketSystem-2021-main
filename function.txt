@@ -12,25 +12,5 @@ void Find(TYPE_KEY low, TYPE_KEY high, std :: vector<TYPE_VAL> &vec, int x = 0) 
 
 
 
-!!!   coonetor & ini()
-
-
-Users::init(this);
-Trains::init(this);
-
-bpuser.getall(user_list);
-
-
-
-bpt:
-bpt_xxx  "Bpt_Xxx"
-
-
-File
-"XXX"
-        File<pair<pair<int,int>,int>>STA_TRAIN;
-
-
-改change -> write
-
-用法的话就是File<Type> xxx;然后xxx.Read(Type,pos)，xxx.Write(Type,pos)，xxx.Delete(pos)，然后要新插入一个的话要找到一个新位置就xxx.Newpos()
+3.2 585 modify_profile -c Rangers -u NoirCorne -p a0CakQ4NJgSBlmvPK8P -g 1
+3.2 1021 modify_profile -c Elysium -u NoirCorne -p bNQo!KQsdQrQ

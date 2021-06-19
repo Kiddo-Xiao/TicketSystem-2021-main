@@ -44,9 +44,15 @@ const char* Users::login(const char* u,const char* p){
 
     User curuser;
     USER.Read(curuser,curpos);
-//    debug
-    string nn="NoirCorne";
-    if(!strcmp(u,nn.c_str()))cerr<<"NoirCorne password : "<<curuser.password<<endl;
+
+//    //debug
+//    string aa="NoirCorne";
+//    int nnpos=connect->cuser.bpt_user.Find(connect->corder.hash.hash_it(aa.c_str()));
+//    cout<<"position : "<<nnpos<<endl;
+//    User nn;
+//    USER.Read(nn,nnpos);
+//    cout<<"NoirCorne now password : "<<nn.password<<endl;
+
 
     if(connect->loguser.count(u)){cerr<<"already exist!"<<endl;return "-1";}
     if(strcmp(curuser.password,p)){cerr<<"wrong password!"<<endl;return "-1";}
@@ -98,7 +104,7 @@ const char* Users::modify_profile(const char* c,const char* u,const char* p,cons
         if (strcmp(n, "")) strcpy(finduser.name, n);
         if (strcmp(p, ""))strcpy(finduser.password, p);
         if (strcmp(m, ""))strcpy(finduser.mailAddr, m);
-        if (g != -1)finduser.privilege=g;
+        if (g != -1)if(connect->loguser.count(u))connect->loguser.erase(u),connect->loguser.insert(make_pair(u,g));
         USER.Write(finduser, findpos);
 
         //debug:

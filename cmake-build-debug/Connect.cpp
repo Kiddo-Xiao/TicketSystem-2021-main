@@ -26,8 +26,8 @@ void Connector::run() {
     int no=0;
     while (1){
         getline(cin,str);
-//        no++;
-//        cout<<"---------------No. "<<no<<"----------------"<<endl;
+        no++;
+        cout<<"---------------No. "<<no<<"----------------"<<endl;
 //        cout<<str<<endl;
 
         if( str.substr(0, 8) == "add_user" ) {

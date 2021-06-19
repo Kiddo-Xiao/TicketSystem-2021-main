@@ -331,7 +331,6 @@ const char* Trains::query_transfer(Date date, const char *from, const char *to, 
     int sta_f_trainnum=sta_f.trainnum;
     Ticket ticket1,ticket2,ticket1_,ticket2_;
     int ans=0x7fffffff;
-//    cout<<"sta_f_trainnum= "<<sta_f_trainnum<<endl;
     for(int i=1;i<=sta_f_trainnum;++i){
         int pos1=bpt_sta_train.Find(make_pair(hash_f,i));
         pair<pair<int,int>,int> sta1;
@@ -347,21 +346,14 @@ const char* Trains::query_transfer(Date date, const char *from, const char *to, 
         int pos=sta2.second;
         Time t1=Time(date,tmp_train.startTime.hour,tmp_train.startTime.minute)
                 +tmp_train.travelTimes[pos]+tmp_train.stopoverTimes[pos];
-//        cout<<tmp_train.trainID<<endl;//pass
-//        if(hash.hash_it(tmp_train.trainID)==sta2.first){cout<<"right"<<endl;}
-//pass!
-//        cout<<"sudiaojd"<<endl;//no cout
         int delt_day=(date-(t1.date-date))-tmp_train.Date1;
         if(((date - (t1.date - date)) < tmp_train.Date1) || (tmp_train.Date2 < (date- (t1.date - date)))) continue;
-
 
         int restseat_pos=bpt_seat.Find(hash.hash_it(tmp_train.trainID));
         Seat restseat;
         SEAT.Read(restseat,restseat_pos);
 
-//        cout<<"wow3"<<endl;
         int min_seat=restseat.seat[delt_day][pos];
-//        cout<<"wow4"<<endl;
         t1.date=date;
         for(int j=pos+1;j<tmp_train.stationNum;j++){
             if(hash.hash_it(tmp_train.stations[j])!=hash_t){
@@ -393,7 +385,7 @@ const char* Trains::query_transfer(Date date, const char *from, const char *to, 
             ticket1_.station_to, ticket1_.arrive.date.month, ticket1_.arrive.date.day,
             ticket1_.arrive.hour, ticket1_.arrive.minute, ticket1_.price, ticket1_.seat);
     char tmp[128];
-    snprintf(tmp, sizeof(tmp), "%s %s %02d-%02d %02d:%02d -> %s %02d-%02d %02d:%02d %d %d\n", ticket2_.train,
+    snprintf(tmp, sizeof(tmp), "%s %s %02d-%02d %02d:%02d -> %s %02d-%02d %02d:%02d %d %d", ticket2_.train,
              ticket2_.station_from, ticket2_.depart.date.month, ticket2_.depart.date.day,
              ticket2_.depart.hour, ticket2_.depart.minute,
              ticket2_.station_to, ticket2_.arrive.date.month, ticket2_.arrive.date.day,

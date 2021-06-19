@@ -8,9 +8,9 @@ using namespace std;
 Connector connector;
 
 int main(){
-
-    freopen("1.in","r",stdin);
-    freopen("test_out.txt","w",stdout);
+//
+//    freopen("1.in","r",stdin);
+//    freopen("test_out.txt","w",stdout);
 
 //    BPlusTree<pair<int,int>,Seat> bpt_seat{"Bpt_Seat.dat"};
 
