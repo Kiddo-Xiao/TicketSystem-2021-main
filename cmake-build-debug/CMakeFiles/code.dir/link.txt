@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/code.dir/TrainRelated.cpp.o CMakeFiles/code.dir/OrderRelated.cpp.o CMakeFiles/code.dir/Connect.cpp.o CMakeFiles/code.dir/UserRelated.cpp.o CMakeFiles/code.dir/main.cpp.o  -o code 

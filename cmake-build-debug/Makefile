@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named TicketSystem_2021_main
+# Target rules for targets named code
 
 # Build rule for target.
-TicketSystem_2021_main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TicketSystem_2021_main
-.PHONY : TicketSystem_2021_main
+code: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 code
+.PHONY : code
 
 # fast build rule for target.
-TicketSystem_2021_main/fast:
-	$(MAKE) -f CMakeFiles/TicketSystem_2021_main.dir/build.make CMakeFiles/TicketSystem_2021_main.dir/build
-.PHONY : TicketSystem_2021_main/fast
+code/fast:
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/build
+.PHONY : code/fast
 
 Connect.o: Connect.cpp.o
 
@@ -129,7 +129,7 @@ Connect.o: Connect.cpp.o
 
 # target to build an object file
 Connect.cpp.o:
-	$(MAKE) -f CMakeFiles/TicketSystem_2021_main.dir/build.make CMakeFiles/TicketSystem_2021_main.dir/Connect.cpp.o
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/Connect.cpp.o
 .PHONY : Connect.cpp.o
 
 Connect.i: Connect.cpp.i
@@ -138,7 +138,7 @@ Connect.i: Connect.cpp.i
 
 # target to preprocess a source file
 Connect.cpp.i:
-	$(MAKE) -f CMakeFiles/TicketSystem_2021_main.dir/build.make CMakeFiles/TicketSystem_2021_main.dir/Connect.cpp.i
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/Connect.cpp.i
 .PHONY : Connect.cpp.i
 
 Connect.s: Connect.cpp.s
@@ -147,7 +147,7 @@ Connect.s: Connect.cpp.s
 
 # target to generate assembly for a file
 Connect.cpp.s:
-	$(MAKE) -f CMakeFiles/TicketSystem_2021_main.dir/build.make CMakeFiles/TicketSystem_2021_main.dir/Connect.cpp.s
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/Connect.cpp.s
 .PHONY : Connect.cpp.s
 
 OrderRelated.o: OrderRelated.cpp.o
@@ -156,7 +156,7 @@ OrderRelated.o: OrderRelated.cpp.o
 
 # target to build an object file
 OrderRelated.cpp.o:
-	$(MAKE) -f CMakeFiles/TicketSystem_2021_main.dir/build.make CMakeFiles/TicketSystem_2021_main.dir/OrderRelated.cpp.o
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/OrderRelated.cpp.o
 .PHONY : OrderRelated.cpp.o
 
 OrderRelated.i: OrderRelated.cpp.i
@@ -165,7 +165,7 @@ OrderRelated.i: OrderRelated.cpp.i
 
 # target to preprocess a source file
 OrderRelated.cpp.i:
-	$(MAKE) -f CMakeFiles/TicketSystem_2021_main.dir/build.make CMakeFiles/TicketSystem_2021_main.dir/OrderRelated.cpp.i
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/OrderRelated.cpp.i
 .PHONY : OrderRelated.cpp.i
 
 OrderRelated.s: OrderRelated.cpp.s
@@ -174,7 +174,7 @@ OrderRelated.s: OrderRelated.cpp.s
 
 # target to generate assembly for a file
 OrderRelated.cpp.s:
-	$(MAKE) -f CMakeFiles/TicketSystem_2021_main.dir/build.make CMakeFiles/TicketSystem_2021_main.dir/OrderRelated.cpp.s
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/OrderRelated.cpp.s
 .PHONY : OrderRelated.cpp.s
 
 TrainRelated.o: TrainRelated.cpp.o
@@ -183,7 +183,7 @@ TrainRelated.o: TrainRelated.cpp.o
 
 # target to build an object file
 TrainRelated.cpp.o:
-	$(MAKE) -f CMakeFiles/TicketSystem_2021_main.dir/build.make CMakeFiles/TicketSystem_2021_main.dir/TrainRelated.cpp.o
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/TrainRelated.cpp.o
 .PHONY : TrainRelated.cpp.o
 
 TrainRelated.i: TrainRelated.cpp.i
@@ -192,7 +192,7 @@ TrainRelated.i: TrainRelated.cpp.i
 
 # target to preprocess a source file
 TrainRelated.cpp.i:
-	$(MAKE) -f CMakeFiles/TicketSystem_2021_main.dir/build.make CMakeFiles/TicketSystem_2021_main.dir/TrainRelated.cpp.i
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/TrainRelated.cpp.i
 .PHONY : TrainRelated.cpp.i
 
 TrainRelated.s: TrainRelated.cpp.s
@@ -201,7 +201,7 @@ TrainRelated.s: TrainRelated.cpp.s
 
 # target to generate assembly for a file
 TrainRelated.cpp.s:
-	$(MAKE) -f CMakeFiles/TicketSystem_2021_main.dir/build.make CMakeFiles/TicketSystem_2021_main.dir/TrainRelated.cpp.s
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/TrainRelated.cpp.s
 .PHONY : TrainRelated.cpp.s
 
 UserRelated.o: UserRelated.cpp.o
@@ -210,7 +210,7 @@ UserRelated.o: UserRelated.cpp.o
 
 # target to build an object file
 UserRelated.cpp.o:
-	$(MAKE) -f CMakeFiles/TicketSystem_2021_main.dir/build.make CMakeFiles/TicketSystem_2021_main.dir/UserRelated.cpp.o
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/UserRelated.cpp.o
 .PHONY : UserRelated.cpp.o
 
 UserRelated.i: UserRelated.cpp.i
@@ -219,7 +219,7 @@ UserRelated.i: UserRelated.cpp.i
 
 # target to preprocess a source file
 UserRelated.cpp.i:
-	$(MAKE) -f CMakeFiles/TicketSystem_2021_main.dir/build.make CMakeFiles/TicketSystem_2021_main.dir/UserRelated.cpp.i
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/UserRelated.cpp.i
 .PHONY : UserRelated.cpp.i
 
 UserRelated.s: UserRelated.cpp.s
@@ -228,7 +228,7 @@ UserRelated.s: UserRelated.cpp.s
 
 # target to generate assembly for a file
 UserRelated.cpp.s:
-	$(MAKE) -f CMakeFiles/TicketSystem_2021_main.dir/build.make CMakeFiles/TicketSystem_2021_main.dir/UserRelated.cpp.s
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/UserRelated.cpp.s
 .PHONY : UserRelated.cpp.s
 
 main.o: main.cpp.o
@@ -237,7 +237,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/TicketSystem_2021_main.dir/build.make CMakeFiles/TicketSystem_2021_main.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -246,7 +246,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/TicketSystem_2021_main.dir/build.make CMakeFiles/TicketSystem_2021_main.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -255,7 +255,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/TicketSystem_2021_main.dir/build.make CMakeFiles/TicketSystem_2021_main.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/code.dir/build.make CMakeFiles/code.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -266,7 +266,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... TicketSystem_2021_main"
+	@echo "... code"
 	@echo "... Connect.o"
 	@echo "... Connect.i"
 	@echo "... Connect.s"

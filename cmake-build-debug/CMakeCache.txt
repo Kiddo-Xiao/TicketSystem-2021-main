@@ -156,7 +156,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=TicketSystem_2021_main
+CMAKE_PROJECT_NAME:STATIC=code
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -231,6 +231,12 @@ TicketSystem_2021_main_BINARY_DIR:STATIC=/mnt/c/Users/11582/Desktop/Computer Scu
 
 //Value Computed by CMake
 TicketSystem_2021_main_SOURCE_DIR:STATIC=/mnt/c/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main
+
+//Value Computed by CMake
+code_BINARY_DIR:STATIC=/mnt/c/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main/cmake-build-debug
+
+//Value Computed by CMake
+code_SOURCE_DIR:STATIC=/mnt/c/Users/11582/Desktop/Computer Scuence/TrainTicket/TicketSystem-2021-main
 
 
 ########################
